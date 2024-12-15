@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilizando o header com imagem de fundo */
+header {
+    background-image: url('imagens/pet\ home.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    position: relative;
+}
+
+/* Estilos para o menu */
+nav {
+    display: flex; /* Torna o menu flexível */
+    /*justify-content: flex-start; /* Alinha os itens à esquerda */
+    /*align-items: center; /* Alinha verticalmente no centro */
+    background-color: #f8c1c1; /* Cor de fundo */
+    padding: 20px;
+}
+
+/* Remove a formatação padrão das listas */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mantém os itens do menu em linha */ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li {
+    margin-right: 30px; /* Espaçamento entre os itens */
+    position: relative; /* Necessário para o dropdown */
+  
+}
+
+/* Estilos dos links */
+nav ul li a {
+    text-decoration: none;
+    color: rgb(15, 4, 83);
+    font-weight: bold;
+}
+
+/* Dropdown (sub-menu) */
+nav ul li ul.dropdown {
+    display: none; /* Esconde o dropdown por padrão */
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background-color: rgb(231, 230, 240);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 16px 32px rgb(15, 4, 83);
+}
+
+nav ul li ul.dropdown li {
+    width: 80px;    
+}
+
+nav ul li ul.dropdown li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    background-color:rgb(231, 230, 240);
+    color: rgb(15, 4, 83); 
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+nav ul li:hover ul.dropdown {
+    display: block; 
+
+/* Estilos de hover */
+nav ul li a:hover {
+    background-color: #f0f0f0; 
+}
+}
+
+.logo{
+    margin-left: 50%;   
+}
+
+/* Ajustando o logo */
+nav img {
+    max-width: 30%; /* Tamanho do logo */
+    height: auto;
+    float: right;
+}
+
+main{
+    padding: 40px;
+}
+
+.h1{
+    text-align: center;
+    padding: 130px;
+    color: #4c1130;
+    font-family: fantasy;
+    font-size: 50px;
+    background-color: rgb(213, 224, 251);
+}
+
+/* Estilo geral do formulário */
+.formulario {
+    max-width: 600px;
+    margin: 20px auto; /* Centraliza o formulário */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da seção */
+.form-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Grupos de entrada */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+.form-label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Entradas de texto */
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Foco nas entradas */
+.form-input:focus, .form-textarea:focus {
+    border-color: #19095f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(25, 9, 95, 0.5);
+}
+
+/* Botão */
+.form-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #19095f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #3b308e;
+}
+
+/*.iframe{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 40px;
+    outline-width: 10px;
+    outline-style: dashed;
+    outline-color: #19095f;
+    border-radius: 20px;    
+
+}*/
+
+.iframe {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Centraliza os elementos */
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    outline: 5px dashed #19095f; /* Borda estilizada */
+    border-radius: 20px;
+    gap: 15px; /* Espaçamento entre a imagem e o iframe */
+  }
+  
+  .iframe img {
+    width: 100%; /* Imagem ocupa toda a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 600px; /* Define uma largura máxima */
+    border-radius: 10px;
+  }
+  
+  .iframe iframe {
+    width: 100%; /* Responsivo: ocupa toda a largura */
+    height: 350px; /* Altura fixa para o mapa */
+    max-width: 600px; /* Limita a largura máxima */
+    border-radius: 10px;
+    border: none;
+  }
+  
+  /* Media Query para telas menores (tablets e celulares) */
+  @media (max-width: 768px) {
+    .iframe {
+      padding: 10px; /* Reduz o padding em telas menores */
+      outline-width: 3px; /* Reduz a espessura da borda */
+    }
+  
+    .iframe iframe {
+      height: 250px; /* Reduz a altura do mapa */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .iframe {
+      margin: 10px; /* Reduz a margem */
+      gap: 10px; /* Menor espaçamento */
+    }
+  
+    .iframe img {
+      max-width: 100%; /* Garante que a imagem ocupe toda a largura da tela */
+    }
+  
+    .iframe iframe {
+      height: 200px; /* Reduz a altura do iframe em telas muito pequenas */
+    }
+  }
+
+
+
+
+footer{
+    background-color: #19095f;
+    color: #9dcbf6;
+    padding: 60px;
+    margin-top: 10px;
+}
+
+.meu-nome{
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+

@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+/* Estilizando o header com imagem de fundo */
+header {
+    background-image: url('imagens/pet\ home.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 500px; 
+    position: relative;
+}
+
+/* Estilos para o menu */
+nav {
+    display: flex; /* Torna o menu flexível */
+    /*justify-content: flex-start; /* Alinha os itens à esquerda */
+    /*align-items: center; /* Alinha verticalmente no centro */
+    background-color: #f8c1c1; /* Cor de fundo */
+    padding: 20px;
+}
+
+/* Remove a formatação padrão das listas */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mantém os itens do menu em linha */ 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav ul li {
+    margin-right: 30px; /* Espaçamento entre os itens */
+    position: relative; /* Necessário para o dropdown */
+  
+}
+
+/* Estilos dos links */
+nav ul li a {
+    text-decoration: none;
+    color: rgb(15, 4, 83);
+    font-weight: bold;
+}
+
+/* Dropdown (sub-menu) */
+nav ul li ul.dropdown {
+    display: none; /* Esconde o dropdown por padrão */
+    position: absolute;
+    top: 30%;
+    right: 0;
+    background-color: rgb(231, 230, 240);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 5px 16px 32px rgb(15, 4, 83);
+}
+
+nav ul li ul.dropdown li {
+    width: 80px;    
+}
+
+nav ul li ul.dropdown li a {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    background-color:rgb(231, 230, 240);
+    color: rgb(15, 4, 83); 
+}
+
+/* Mostrar o dropdown ao passar o mouse */
+nav ul li:hover ul.dropdown {
+    display: block; 
+
+/* Estilos de hover */
+nav ul li a:hover {
+    background-color: #f0f0f0; 
+}
+}
+
+.logo{
+    margin-left: 50%;   
+}
+
+/* Ajustando o logo */
+nav img {
+    max-width: 30%; /* Tamanho do logo */
+    height: auto;
+    float: right;
+}
+
+#pet{  
+    margin: 0;
+    padding: 5%;
+    color: #4c1130;
+    font-family: fantasy;
+    text-align: justify;
+    font-size: 150%;
+    background-color: rgb(213, 224, 251); 
+}
+
+#afeto{
+    background-image: url(imagens/cachorro-gato.jpg);
+    background-size: cover;
+    height: 70vh;
+    width: 100%;   
+}
+
+#afeto h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #660000;
+    font-size: 40px;
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+}
+
+#promoção {
+    background-color: rgb(134, 134, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar os cards em linhas para responsividade */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards na tela */
+    padding: 20px;
+  }
+  
+  article {
+    background-color: white;
+    border-radius: 10px; /* Arredonda os cantos dos cards */
+    box-shadow: 0 16px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+    overflow: hidden; /* Evita que conteúdo extra saia dos limites */
+    flex: 1 1 300px; /* Os cards terão pelo menos 300px, mas se ajustam */
+    max-width: 300px; /* Define uma largura máxima para os cards */
+    text-align: center; /* Centraliza o conteúdo dentro do card */
+  }
+  
+ .promoção {
+    margin: 0;
+  }
+  
+ .serviços {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura do card */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  
+ figcaption {
+    background-color: #032b51;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  /* Adicione um espaçamento extra dentro do card para os textos */
+  article {
+    padding-bottom: 20px;
+  }
+
+
+/**/
+
+.title-produtos{
+    padding: 30px;
+    background-image: url(imagens/fundo\ azul.jpeg);
+    background-size: cover;
+    color:  #312101;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    margin: 60px;
+    border: 15px;
+    border-style: dotted;
+    border-color: #f4ab25;
+}
+
+.produtos{
+    background-image: url(imagens/fundo\ azul.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+    justify-content: center; 
+    border: 15px;
+    border-style: dotted;
+    border-color: #f4ab25;
+    margin-left: 180px;
+    max-width: 800px;
+}
+
+.produtos figure figcaption{
+    background-color: white;
+    color: #312101;;
+    text-align: center;  
+    font-size: 20px;
+}
+
+/**/
+
+#endereço{
+    color:#19095f;
+    font-size: 2.5em;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(166, 166, 243);
+    text-align: center;
+}
+   
+.bichinhos {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: stretch; 
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 10px;
+    margin: 30px;
+    outline: 5px dashed #19095f; /* Estilização da borda */
+    border-radius: 20px;
+    max-width: 1200px; /* Limita o contêiner em telas muito largas */
+  }
+  
+  .bichinhos figure,
+  .bichinhos iframe {
+    flex: 1; /* Ocupa o mesmo espaço */
+    max-width: 600px; /* Largura máxima para cada item */
+    height: auto;
+  }
+  
+  .bichinhos img {
+    width: 100%; /* Ajusta a imagem ao contêiner */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .bichinhos iframe {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* Media Query para telas menores */
+  @media (max-width: 768px) {
+    .bichinhos {
+      flex-direction: column; /* Empilha os itens verticalmente */
+      padding: 10px;
+      outline-width: 3px; /* Reduz a espessura da borda */
+    }
+  
+    .bichinhos figure,
+    .bichinhos iframe {
+      max-width: 100%; /* Ocupa a largura total do contêiner */
+    }
+  
+    .bichinhos img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+
+/* Estilos para a seção de vídeo */
+#video {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espaço entre o vídeo e o texto */
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos para o vídeo */
+#video iframe {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para o título */
+#video h1 {
+    flex: 1;
+    text-align: center;
+    color: rgb(6, 6, 72);
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin: 0;
+}
+
+.form{
+    background-color: #19095f;
+    color: #9dcbf6;
+    padding: 1em;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #19095f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: #3b308e;
+}
+
+button a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+button a:hover{
+    color: white;
+    font-size: 30px;
+}
+
+
+/* Estilo geral do carrossel */
+
+.carrossel {
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 4px double #19095f;
+    width: 640px;
+    height: 360px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.carrossel .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.carrossel .fotos img {
+    width: 19.9%;
+}
+
+#mensagem {
+    display: none; /* Começa escondida */
+    margin-top: 20px;
+    color: #560303;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+  
+footer{
+    background-color: #19095f;
+    color: #9dcbf6;
+    padding: 60px;
+    margin-top: 10px;
+}
+
+.meu-nome{
+    position: relative;
+    float: right;
+    font-size: 20px;
+}
+
+
+
